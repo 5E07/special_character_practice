@@ -13,9 +13,10 @@ char ans;
 int cnt;
 string s;
 
+
 int main(){
     ifstream infile;
-    infile.open("raw.txt");
+    infile.open("raw2.txt");
     getline(infile,s);
     srand(time(0));
     random_shuffle(s.begin(), s.end());
@@ -32,4 +33,8 @@ int main(){
         <<" ("
         <<setprecision(2)<<(float)cnt/s.size()
         <<")\n";
+
+    cout<<"END of execution.\nWritten By 5E07 (GH), retart (CF).\nAs Of 2023.01.23.";
+    std::cin>>ans;
+    return 0;
 }
