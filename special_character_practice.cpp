@@ -16,7 +16,7 @@ string s;
 
 int main(){
     ifstream infile;
-    infile.open("raw2.txt");
+    infile.open("raw.txt");
     getline(infile,s);
     srand(time(0));
     random_shuffle(s.begin(), s.end());
